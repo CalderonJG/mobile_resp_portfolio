@@ -75,25 +75,26 @@
         <h1 class="text-left"><strong>Portfolio</strong></h1>
       </div>
 
-      <!-- a Bootstrap row with columns -->
-      <div class="row">
+      <!-- a Bootstrap grid: responsive column breaks -->
 
-        <!-- At large+ screens takes up full width (12/12) -->
-        <div class="col-lg">
+      <div class="container">
+        <div class="row">
 
-          <!-- First image with thumbnail rules -->
-          <img class="img thumbnail left-block" src="https://placehold.it/200x200" alt="firstProject" width="50%">
+          <!-- First image with rules -->
+          <img class="img thumbnail top-left" src="https://placehold.it/200x200" alt="firstProject" width="33.3%">
 
-           <!-- Second image with thumbnail rules -->
-           <img class="img thumbnail left-block" src="https://placehold.it/200x200" alt="secondProject" width="50%">
+          <img class="img thumbnail left-right" src="https://placehold.it/200x200" alt="secondProject" width="33.3%">
 
-            <!-- Third image with thumbnail rules -->
-          <img class="img thumbnail left-block" src="https://placehold.it/200x200" alt="thirdProject" width="50%">
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
 
 
+          <img class="img thumbnail btm-left" src="https://placehold.it/200x200" alt="thirdProject" width="50%">
+
+          <img class="img thumbnail btm-right" src="https://placehold.it/200x200" alt="fourthProject" width="50%">
         </div>
-
       </div>
+
     </div>
 
     <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->

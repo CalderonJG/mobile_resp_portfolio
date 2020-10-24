@@ -11,99 +11,93 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Coding Boot Camp!</title>
+  <title>Coding Boot Camp!</title><!-- Bootstrap-Powered HTML -->
 
-  <!-- We link our html to the Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Students:
+    1. Where is the HTML document drawing its styles from?
 
-</head>
+    2. How does our browser know which element to style in which way? (ex: button face or background banner)
+  -->
+  <!DOCTYPE html>
+  <html lang="en-us">
 
-<body>
+  <head>
 
-  <!-- Container Div -->
-  <div class="container">
+    <meta charset="UTF-8">
+    <title>Responsive Portfolio</title>
 
-    <!-- Section 1: Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- We link our html to the Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <!-- Our brand / logo -->
-      <a class="navbar-brand" href="#">The Coding Boot Camp</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  </head>
 
-        <!-- Collapsible button -->
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
+  <body>
 
-          <!-- The links of our navbar -->
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+    <!-- Container Div -->
+    <div class="container">
 
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
+      <!-- Section 1: Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-          <!-- a Dropdown menu -->
-          <li class="nav-item dropdown">
+        <!-- Our brand / logo -->
+        <a class="navbar-brand" href="#">Jose Calderon III</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
+          <!-- Collapsible button -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
 
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <!-- a Dropdown menu -->
+            <li class="nav-item dropdown">
 
-          </li>
-        </ul>
-      </div>
-    </nav>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+              </a>
 
-    <!-- Jumbotron element -->
-    <div class="jumbotron">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="#">Portfolio</a>
+                <a class="dropdown-item" href="#">Contact</a>
+              </div>
 
-      <!-- centered text -->
-      <h1 class="text-center"><strong>Awesome Header</strong></h1>
-      <h2 class="text-center">Smaller Awesome Header</h2>
-      <h3 class="text-center">Even Smaller Header</h3>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-      <!-- button with predefined style rules -->
-      <p class="text-center">
-        <a class="btn btn-primary btn-lg" href="#" role="button">
-          <span class="fa fa-envelope"></span> Learn more</a>
-      </p>
-    </div>
+      <!-- Header element -->
+      <div class="header">
 
-    <!-- a Bootstrap row with columns -->
-    <div class="row">
-
-      <!-- At large+ screens takes up half width (6/12) -->
-      <div class="col-lg-6">
-
-        <!-- centered image with thumbnail rules -->
-        <img class="img thumbnail center-block" src="http://legacy.nerdywithchildren.com/wp-content/uploads/2013/06/ComfyChildKeyboard.jpg" alt="KidComputer" width="50%">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, molestiae modi accusantium animi magnam veniam, impedit asperiores sint consequuntur debitis fugit quibusdam dolor, iusto sed porro ab minus voluptatibus amet.</p>
+        <!-- centered text -->
+        <h1 class="text-left"><strong>Contact</strong></h1>
       </div>
 
-      <!-- At large+ screens takes up half width (6/12) -->
-      <div class="col-lg-6">
-        <img class="img thumbnail center-block" src="https://images.unsplash.com/photo-1477453559950-e541fa922120" alt="LittleCoder" width="50%">
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, maiores, quos. At, animi, facilis. Alias itaque ab minima rerum, eaque animi nesciunt harum nemo est cumque voluptas, qui reprehenderit atque.</p>
-      </div>
-    </div>
-  </div>
+      <!-- Bootstrap contact form -->
 
-  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <form>
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="name" class="form-control" id="inputName" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="textArea" class="col-sm-2 col-form-label">Message</label>
+          <textarea type="textArea" class="form-control" id="inputMessage" placeholder="Message"></textarea>
+        </div>
 
-  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Send Me!</button>
+          </div>
+        </div>
+      </form>
