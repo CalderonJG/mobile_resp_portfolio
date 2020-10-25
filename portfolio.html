@@ -1,36 +1,16 @@
-<!-- Bootstrap-Powered HTML -->
-
-<!-- Students:
-  1. Where is the HTML document drawing its styles from?
-
-  2. How does our browser know which element to style in which way? (ex: button face or background banner)
--->
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
 
   <meta charset="UTF-8">
-  <title>Coding Boot Camp!</title><!-- Bootstrap-Powered HTML -->
+  <title>Responsive Portfolio</title>
 
-  <!-- Students:
-    1. Where is the HTML document drawing its styles from?
+  <!-- We link our html to the Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    2. How does our browser know which element to style in which way? (ex: button face or background banner)
-  -->
-  <!DOCTYPE html>
-  <html lang="en-us">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <title>Responsive Portfolio</title>
-
-    <!-- We link our html to the Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  </head>
+</head>
 
   <body>
 
@@ -50,20 +30,20 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
 
-            <!-- a Dropdown menu -->
-            <li class="nav-item dropdown">
+           <!-- a Dropdown menu -->
+          <li class="nav-item dropdown">
 
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Menu
-              </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
 
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="index.html">About</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="index.html">About</a>
               <a class="dropdown-item" href="portfolio.html">Portfolio</a>
               <a class="dropdown-item" href="contact.html">Contact</a>
-              </div>
+            </div>
 
-            </li>
+          </li>
           </ul>
         </div>
       </nav>
@@ -81,17 +61,17 @@
         <div class="row">
 
           <!-- First image with rules -->
-          <img class="img thumbnail top-left" src="https://placehold.it/200x200" alt="firstProject" width="33.3%">
+          <img class="img thumbnail top-left" src="chalk.jpg" alt="firstProject" width="33.3%">
 
-          <img class="img thumbnail left-right" src="https://placehold.it/200x200" alt="secondProject" width="33.3%">
+          <img class="img thumbnail left-right" src="spiderverse.jpg" alt="secondProject" width="33.3%">
 
           <!-- Force next columns to break to new line at md breakpoint and up -->
           <div class="w-100 d-none d-md-block"></div>
 
 
-          <img class="img thumbnail btm-left" src="https://placehold.it/200x200" alt="thirdProject" width="50%">
+          <img class="img thumbnail btm-left" src="futureroomie.jpg" alt="thirdProject" width="33.3%">
 
-          <img class="img thumbnail btm-right" src="https://placehold.it/200x200" alt="fourthProject" width="50%">
+          <img class="img thumbnail btm-right" src="oaks.jpg" alt="fourthProject" width="33.3%">
         </div>
       </div>
 
@@ -102,19 +82,6 @@
 
     <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-      //* Small devices (landscape phones, 576px and up) *//
-      @media (min-width: 576px) { ... }
-
-      //* Medium devices (tablets, 768px and up)
-    @media (min-width: 768px) { ... }
-
-    // Large devices (desktops, 992px and up)
-    @media (min-width: 992px) { ... }
-
-    // Extra large devices (large desktops, 1200px and up)
-    @media (min-width: 1200px) { ... }"
-
   </body>
 
-  </html>
+</html>
