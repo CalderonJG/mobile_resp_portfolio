@@ -4,6 +4,9 @@
 <head>
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Responsive Portfolio</title>
 
   <!-- We link our html to the Bootstrap CDN -->
@@ -12,76 +15,84 @@
 
 </head>
 
-  <body>
-
-    <!-- Container Div -->
-    <div class="container">
+<body>
 
       <!-- Section 1: Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
 
         <!-- Our brand / logo -->
-        <a class="navbar-brand" href="#">Jose Calderon III</a>
+        <a class="navbar-brand" href="index.html" id="logo">Jose Calderon III</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-          <!-- Collapsible button -->
+        <!-- Collapsible button -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 
            <!-- a Dropdown menu -->
-          <li class="nav-item dropdown">
-
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Menu
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="index.html">About</a>
-              <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-              <a class="dropdown-item" href="contact.html">Contact</a>
-            </div>
-
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
           </ul>
         </div>
-      </nav>
 
-      <!-- Header element -->
-      <div class="header">
-
-        <!-- centered text -->
-        <h1 class="text-left"><strong>Portfolio</strong></h1>
       </div>
 
-      <!-- a Bootstrap grid: responsive column breaks -->
+    </nav>
+    <!-- End navbar collapse -->
 
-      <div class="container">
-        <div class="row">
-
-          <!-- First image with rules -->
-          <img class="img thumbnail top-left" src="chalk.jpg" alt="firstProject" width="33.3%">
-
-          <img class="img thumbnail left-right" src="spiderverse.jpg" alt="secondProject" width="33.3%">
-
-          <!-- Force next columns to break to new line at md breakpoint and up -->
-          <div class="w-100 d-none d-md-block"></div>
-
-
-          <img class="img thumbnail btm-left" src="futureroomie.jpg" alt="thirdProject" width="33.3%">
-
-          <img class="img thumbnail btm-right" src="oaks.jpg" alt="fourthProject" width="33.3%">
-        </div>
+  <!-- Start of container -->
+  <div class="container">
+    <main class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">Portfolio</h1>
+          <hr />
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="chalk.jpg" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="oaks.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="futureroomie.jpg" alt="">
+            </div>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="spiderverse.jpg" alt="">
+            </div>
+          </div>
+        </article>
       </div>
+    </main>
+  </div>
+  <!-- End of container -->
 
-    </div>
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2020 Jose Calderon III
+    </p>
+  </footer>
+  <!-- End of footer -->
+
 
     <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </body>
+</body>
 
 </html>
