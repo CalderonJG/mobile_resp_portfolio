@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Responsive Portfolio</title>
+  <title>Jose Calderon III's Portfolio</title>
 
   <!-- We link our html to the Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" rel="text/css" href="style.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
 
-        <!-- Our brand / logo -->
+        <!-- My brand / logo -->
         <a class="navbar-brand" href="index.html" id="logo">Jose Calderon III</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,22 +56,41 @@
         <article class="block">
           <h1 class="block-header">Portfolio</h1>
           <hr />
+
+          <!-- First row project -->
           <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6">
-              <img class="img-fluid port-image" src="chalk.jpg" alt="">
-            </div>
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <img class="img-fluid port-image" src="oaks.jpg" alt="">
+              <span class="border border-primary"><img class="img-fluid port-image" src="./images/travelshaman.PNG" alt="Travel Shaman site"></span>
+              <div class="media-body ml-3 mr-3">
+                  <h4 class="mt-0">Travel Bucket List</h4>
+                  <p>What is the project about</p>
+                  <p>Deployed here on Heroku: <a href="https://travel-log-project.herokuapp.com/" target="_blank"></a></p>
+                  <p>Repository here on Github: <a href="https://github.com/CalderonJG/TeamProject2" target="_blank"></a></p>
+              </div>
             </div>
           </div>
+
+          <!-- Second row project -->
           <div class="row">
             <div class="col-sm-6 col-md-12 col-lg-6">
-              <img class="img-fluid port-image" src="futureroomie.jpg" alt="">
-            </div>
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <img class="img-fluid port-image" src="spiderverse.jpg" alt="">
+              <img class="img-fluid port-image" src="./images/futbolproject.PNG" alt="Futbol">
             </div>
           </div>
+
+          <!-- Third row project -->
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="./images/" alt="Weather dashboard">
+            </div>
+          </div>
+
+          <!-- Fourth row project -->
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="img-fluid port-image" src="./images/passgen.PNG" alt="Password Generator">
+            </div>
+          </div>
+
         </article>
       </div>
     </main>
