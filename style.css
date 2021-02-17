@@ -3,4 +3,21 @@
 
 /*.navbar-brand {
     background-color: purple;
+} */
+
+img {
+    border: black solid 3px;
 }
+
+.media-body {
+    float: left;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
